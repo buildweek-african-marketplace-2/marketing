@@ -1,5 +1,7 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,700");
+
 /*Disabled desktop menu*/
-/*Enabled in media query*/
+/*Re-enabled in media query*/
 .main-nav {
  display: none;
 }
@@ -16,22 +18,293 @@
  display: none;
 }
 
+
+/*Side bar*/
+.sidebar {
+ margin-top: -2rem;
+ width: 6rem;
+ height: 100%;
+ background-color: black;
+ position: fixed;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+ align-items: center;
+ z-index: 2;
+}
+
+/*Hamburger menu*/
+.menu-burger {
+ margin-top: 3rem;
+ cursor: pointer;
+ position: fixed;
+}
+
+.bar {
+ height: 0.2rem;
+ width: 2.5rem;
+ background-color: whitesmoke;
+ margin-bottom: 0.6rem;
+ margin-right: 5px;
+}
+
+/*Social Icons*/
+.social-icons {
+ list-style: none;
+ padding: 0;
+ height: 25rem;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-evenly;
+ align-items: center;
+ margin-top: 30rem;
+
+ .social-link {
+  font-size: 2rem;
+  color: #777;
+  transition: color 0.3s;
+
+  &:hover {
+   color: coral;
+  }
+ }
+}
+
+.logo-2 {
+ margin-top: -20rem;
+ display: none;
+}
+
+.navigation-search {
+ position: relative;
+}
+
+/*Navigation search*/
+.navigation {
+ margin-bottom: 5rem;
+ margin-left: 1rem;
+ width: 25rem;
+ padding: 1rem 2rem;
+ display: flex;
+ justify-content: center;
+ margin-top: -20rem;
+ background-color: rgba(0, 0, 0, 0.3);
+ font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+ color: black;
+ outline: none;
+ border: 4px solid black;
+ border-radius: 10rem;
+ transition: background-color 0.3s;
+
+ &:focus {
+  background-color: rgba(0, 0, 0, 0.2);
+ }
+}
+
+.navigation-btn {
+ border: none;
+ background-color: transparent;
+ color: whitesmoke;
+ font-size: 1.7rem;
+ position: absolute;
+ top: -19rem;
+ right: 1rem;
+ cursor: pointer;
+ outline: none;
+}
+
+/* Menu naviation*/
+.main-nav-menu {
+ position: fixed;
+ left: -45rem;
+ margin-top: -1.9rem;
+ width: 45rem;
+ height: 100%;
+ background-color: coral;
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+ opacity: 85%;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-evenly;
+ align-items: center;
+ transition: left 0.8s cubic-bezier(1, 0, 0, 1);
+ z-index: 1;
+
+
+}
+
+.heading {
+ font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+ text-decoration: underline;
+ margin-top: -70%;
+ font-size: 3.5rem;
+}
+
+ul {
+ margin-top: -40rem;
+}
+
+li {
+ margin-bottom: 14%;
+}
+
+.nav-list-menu {
+ list-style: none;
+ padding: 0;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+ align-items: center;
+ text-shadow: 2px 2px 4px #4b4b4b;
+}
+
+.nav-link-menu {
+ color: black;
+ font-size: 4rem;
+ font-weight: 400;
+ text-decoration: none;
+ letter-spacing: 0.3rem;
+ transition: color 0.5s;
+ font-family: Impact, Charcoal, sans-serif;
+
+ &:hover {
+  color: white;
+ }
+}
+
+.bar-1,
+.bar-3 {
+ transition: all 0.4s;
+}
+
+.checkbox:checked~.main-nav-menu {
+ left: 3.5rem;
+}
+
+.checkbox:checked~.sidebar .bar-1 {
+ transform: rotate(-405deg) translate(-5px, 6px);
+}
+
+.checkbox:checked~.sidebar .bar-2 {
+ opacity: 0;
+}
+
+.checkbox:checked~.sidebar .bar-3 {
+ transform: rotate(405deg) translate(-5px, -6px);
+}
+
+/*Sidebar Menu naviation ENDED*/
+
+/*Logo*/
+.logo {
+ display: none;
+}
+
+/*Lady image on header*/
+.main-name {
+ padding: 10vh 0;
+
+ background: gray url("../img/lady3.jpg");
+ background-size: cover;
+ background-blend-mode: multiply;
+ color: white;
+ text-align: center;
+ height: 50%;
+ background-position: center;
+ background-repeat: no-repeat;
+ text-align: center;
+ margin-bottom: 1rem;
+ margin-top: -10rem;
+ margin-left: -5rem;
+
+ h1 {
+  font-size: 13rem;
+ }
+}
+
+/*ABOUT Lady image on header*/
+.main-name-about {
+ padding: 10vh 0;
+
+ background: gray url("../img/assorted.jpg");
+ background-size: cover;
+ background-blend-mode: multiply;
+ color: white;
+ text-align: center;
+ height: 50%;
+ background-position: center;
+ background-repeat: no-repeat;
+ text-align: center;
+ margin-bottom: 1rem;
+ margin-top: -10rem;
+ margin-left: -5rem;
+
+
+ h1 {
+  font-size: 13rem;
+  margin-bottom: 5rem;
+ }
+}
+
+/*Line under pasta image*/
+hr {
+ margin: 20rem 1rem 5rem 0;
+}
+
+/*Main name displayed*/
+.label-2 {
+ margin-top: -20rem;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-direction: column;
+ color: white;
+}
+
+/*Page name*/
+.trop {
+ color: whitesmoke;
+ padding: -10rem 0 5rem 0;
+ font-size: 15px;
+
+ text-decoration: underline;
+ margin: 20rem 0 0 3rem;
+}
+
+.afri {
+ font-size: 5rem;
+ opacity: 0.7;
+ margin: 3rem 0 0 3rem;
+}
+
+
+.p1-2 {
+ font-size: 5rem;
+ text-align: center;
+ padding: 8% 15% 12% 15%;
+ font-family: "Segoe UI";
+ color: white;
+ opacity: 100%;
+}
+
+
+
 /*Media query***********************************************************************/
-@media(max-width:900px) {
+@media (min-width: 1211px) {
  .menu-nav {
   display: none;
  }
-
-
 
  #wrapper {
   margin-left: -3rem;
  }
 
-
  /*Navigation*/
  .account {
   display: flex;
+  margin-top: -5.5rem;
  }
 
  .nav-list {
@@ -46,7 +319,7 @@
  }
 
  .navigation-search {
-  position: relative
+  position: relative;
  }
 
  /*Navigation search*/
@@ -56,21 +329,17 @@
   display: flex;
   justify-content: center;
   margin-top: -30px;
-  background-color: rgba(0, 0, 0, .3);
-  font-family: 'Franklin Gothic Medium',
-   'Arial Narrow',
-   Arial,
-   sans-serif;
+  background-color: rgba(0, 0, 0, 0.3);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   color: black;
   outline: none;
   border: 2px solid green;
   border-radius: 10rem;
-  transition: background-color .3s;
+  transition: background-color 0.3s;
 
   &:focus {
-   background-color: rgba(0, 0, 0, .2);
+   background-color: rgba(0, 0, 0, 0.2);
   }
-
  }
 
  .navigation-btn {
@@ -83,7 +352,6 @@
   cursor: pointer;
   outline: none;
  }
-
 
  .nav-link {
   --spacing: 1em;
@@ -157,7 +425,6 @@
 
  /*Main header image and nav*/
  header {
-
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -180,7 +447,6 @@
  /*Line under pasta image*/
  hr {
   margin-left: 2rem;
-
  }
 
  /*Image and page name*/
@@ -193,7 +459,6 @@
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-
  }
 
  /*Page name*/
@@ -212,9 +477,9 @@
  /*Logo*/
  .logo {
   display: flex;
-  background: white;
+  background: #ffffff7e;
   border-radius: 50%;
-  padding: 12px;
+  padding: -1px;
   opacity: 0.7;
  }
 }
